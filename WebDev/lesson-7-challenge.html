@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="lesson-7-challenge.css">
+</head>
+<body>
+  <p class="js-question-output question-output"></p>
+  <h1 class="js-result-output result-output"></h1>
+
+  <div class="main-div">
+    <div class="div-1">
+      <button onclick="calculator(1)" class="num-button">1</button>
+      <button onclick="calculator(2)" class="num-button">2</button>
+      <button onclick="calculator(3)" class="num-button">3</button>
+      <button onclick="calculator('+')" class="symbol-button">+</button>
+    </div>
+    
+    <div class="div-2">
+      <button onclick="calculator(4)" class="num-button">4</button>
+      <button onclick="calculator(5)" class="num-button">5</button>
+      <button onclick="calculator(6)" class="num-button">6</button>
+      <button onclick="calculator('-')" class="symbol-button">-</button>
+    </div>
+  
+    <div class="div-3">
+      <button onclick="calculator(7)" class="num-button">7</button>
+      <button onclick="calculator(8)" class="num-button">8</button>
+      <button onclick="calculator(9)" class="num-button">9</button>
+      <button onclick="calculator('*')" class="symbol-button">*</button>
+    </div>
+  
+    <div class="div-4">
+      <button onclick="calculator(0)" class="num-button">0</button>
+      <button onclick="calculator('.')" class="num-button">.</button>
+      <button onclick="result()" class="num-button">=</button>
+      <button onclick="calculator('/')" class="symbol-button">/</button>
+    </div>
+
+    <div class="div-5">
+      <button onclick="clearScreen()" class="num-button">clear</button>
+    </div>
+    
+  </div>
+  
+
+  <script>
+    let calculation = '';
+
+    function calculator(input) {
+      calculation += input;
+      document.querySelector('.js-question-output')
+      .innerHTML = calculation;
+    }
+
+    function result() {
+       document.querySelector('.js-result-output').innerHTML = eval(calculation);
+
+       document.querySelector('.js-question-output')
+        .innerHTML = ''
+      }
+
+    function clearScreen() {
+      calculation = ''; 
+      document.querySelector('.js-result-output')
+      .innerHTML = ``;
+      document.querySelector('.js-question-output')
+        .innerHTML = ''
+    }
+  </script>
+</body>
+</html>

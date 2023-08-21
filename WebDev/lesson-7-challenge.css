@@ -1,0 +1,88 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  background-color: rgb(50, 50, 50);
+}
+
+.main-div {
+  width: 200px;
+  height: 250px;
+  position: relative;
+  background-color: rgb(225, 20 20);
+  align-items: top;
+  margin-top: 0;
+  
+}
+
+.div-1 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  margin-bottom: 10px;
+}
+
+.div-2 {
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
+.div-3 {
+  position: absolute;
+  top: 120px;
+  left: 0;
+}
+
+.div-4 {
+  position: absolute;
+  top: 170px;
+  left: 0;
+}
+.div-5 {
+  position: absolute;
+  top: 220px;
+  left: 0;
+}
+.result-output, .question-output {
+  margin-top: 40px;
+  color: white;
+ 
+}
+
+.result-output, .main-div, .question-output {
+  margin: 50px 50px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.num-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: rgb(142, 142, 142);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s;
+  text-align: center;
+  
+}
+
+
+.symbol-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: rgb(223, 162, 31);
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.num-button:active {
+  color: black;
+}
