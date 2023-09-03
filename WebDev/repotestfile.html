@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>repotestfile</title>
+
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+
+    }
+    @media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+/* This @media means when the screen width is 1600px or
+   less, we will divide the grid into 6 columns. */
+    @media (max-width: 1600px) {
+      .products-grid {
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
+
+    @media (max-width: 1300px) {
+      .products-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (max-width: 800px) {
+      .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 575px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 450px) {
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .container {
+      height: 350px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 10px;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .image-container {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      border-radius: 10px;
+      top: 0;
+      right: 0;
+      left: 0;
+      
+    }
+
+    .product-image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .product-info {
+      display: grid;
+      grid-template-columns: 1fr ;
+      margin-top: 160px;
+      font-size: 20px;
+      row-gap: 5px;
+    }
+
+    .product-name {
+
+    }
+
+    .product-rating {
+
+    }
+
+    .product-rating {
+
+    }
+
+    .product-price {
+
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-grid">
+    <div class="container">
+      <div class="image-container"><img src="product-1-image.jpeg" class="product-image"></div>
+      <div class="product-info">
+        <div class="product-name">vase</div>
+        <div class="product-rating">4.5</div>
+        <div class="product-price">$12.99</div>
+      </div>
+     </div>
+  </div>
+
+
+  <script src="repofiletest.js"></script>
+</body>
+</html>
