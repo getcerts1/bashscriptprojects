@@ -10,7 +10,7 @@ console.log(GenerateRandomNum)
 
 const array1 = [
   {
-    name: 'product1',
+    name: 'chinese vase',
     image: '',
     rating: {
       stars: 4.5,
@@ -19,7 +19,7 @@ const array1 = [
     priceCents: 1099
   },
   {
-    name: 'product2',
+    name: 'armenian vase',
     image: ``,
     rating: {
       stars: 4.5,
@@ -36,8 +36,8 @@ array1.forEach((item) => {
   <div class="image-container"><img src="product-1-image.jpeg" class="product-image"></div>
   <div class="product-info">
     <div class="product-name">${item.name}</div>
-    <div class="product-rating">${item.rating}</div>
-    <div class="product-price">${item.priceCents}</div>
+    <div class="product-rating">${item.rating.stars}</div>
+    <div class="product-price">$${((item.priceCents)/100).toFixed(2)}</div>
   </div>
  </div>`
 
